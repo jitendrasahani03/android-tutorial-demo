@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit_view"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_margin="5dp"
+        android:hint="Enter your name"
+        />
+    <TextView
+        style="@style/DefaultText"
+        android:text="Topping"
+        android:textStyle="bold"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brown_sugar_check_box"
+        android:text="Brown Sugar"
+        android:layout_marginStart="16dp"
+        android:paddingStart="10dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:paddingStart="10dp"
+        android:id="@+id/honey_check_box"
+        android:text="Honey"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/cocoa_powder_check_box"
+        android:paddingStart="10dp"
+        android:text="Cocoa Powder"
+        />
+    <TextView
+        style="@style/DefaultText"
+
+        android:text="Quantity"
+
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+
+            android:onClick="decrement"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginStart="16dp"
+            android:id="@+id/quantity_text_view"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginStart="16dp"
+            android:onClick="increment"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/DefaultText"
+        android:text="Price"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        android:layout_marginStart="16dp"
+        android:id="@+id/order_summary_text_view"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_marginStart="16dp"
+        android:onClick="submitOrder"
+        android:paddingTop="5dp"
+        />
+
+
+</LinearLayout>
+</ScrollView>

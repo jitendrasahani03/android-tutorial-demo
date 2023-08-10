@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pin_chat"
+        android:icon="@drawable/pin"
+        android:title="Pin Chat"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/archive_chat"
+        android:icon="@drawable/archive"
+        android:title="Archive Chat"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/exit_group"
+        android:title="Exit Group" />
+    <item
+        android:id="@+id/add_chats_shortcut"
+        android:title="Add chat shortcut" />
+    <item
+        android:id="@+id/group_info"
+        android:title="Group Info" />
+    <item
+        android:id="@+id/marks_as_unread"
+        android:title="Marks as unread" />
+    <item
+        android:id="@+id/select_all"
+        android:title="Select All" />
+
+</menu>

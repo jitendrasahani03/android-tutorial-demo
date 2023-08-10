@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item0"
+        android:icon="@drawable/bluetooth_50x50"
+        android:title="item0"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/bluetooth_50x50"
+        android:title="item1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sumItem"
+        android:icon="@drawable/bluetooth_50x50"
+        android:title="SubItem"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/item2"
+                android:icon="@drawable/bluetooth_50x50"
+                android:title="item2" />
+            <item
+                android:icon="@drawable/bluetooth_50x50"
+                android:title="item3" />
+        </menu>
+    </item>
+    <group
+        android:id="@+id/itemGroup"
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/bluetooth_50x50"
+            android:title="item4" />
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/bluetooth_50x50"
+            android:title="item5" />
+    </group>
+
+</menu>

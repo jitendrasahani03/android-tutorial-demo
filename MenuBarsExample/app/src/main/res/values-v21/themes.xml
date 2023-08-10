@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/white
+        </item>   <!--Three dots and navigation drawer icon color-->
+        <item name="android:textColorPrimary">@color/white
+        </item>       <!--toolbar text(title,subtitle,menu item title) color-->
+    </style>
+</resources>

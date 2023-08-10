@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:padding="16dp"
+    tools:context=".RippleEffectActivity">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:textSize="16sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@android:color/black"
+        android:text="Default Bounder"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@android:color/black"
+        android:text="Default UnBounder"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="@drawable/custom_ripple_border"
+        android:textColor="@android:color/black"
+        android:text="Customised Bounder"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/custome_ripple_borderless"
+        android:text="Customised UnBounder"/>
+    </LinearLayout>

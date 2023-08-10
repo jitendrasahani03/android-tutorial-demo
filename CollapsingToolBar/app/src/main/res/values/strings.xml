@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Collapsing ToolBar</string>
+    <string name="description">Image descriptions provide a textual description of images presented in digital documents. These descriptions support the inclusion of blind, low vision, and low-tech users of all AAA products. This ensures that information presented in a purely visual format, especially a digital graphic, is accessible to anyone who may not be able to physically see the visual for any reason. Image descriptions may also be used in printed products, especially when printed in Braille, to provide information about the visuals supplementing text. Printing the text of an image description may also provide sighted readers another option for processing visual information.</string>
+</resources>
