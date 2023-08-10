@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="myquote"
+            type="com.example.viewmodelexample.Quote" />
+        <variable
+            name="mainactivity"
+            type="com.example.viewmodelexample.MainActivity" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_margin="8dp" android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:id="@+id/carviewrelativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:elevation="5dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/texttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="2dp"
+                        android:padding="5dp"
+                        android:text="Title"
+                        android:textSize="20sp"
+                        app:text="@{myquote.title}"
+                        tools:text="Title">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textauthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="5dp"
+                        tools:text="Author"
+                        android:text="@{myquote.author}"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fabAccent"
+            android:onClick="@{()->mainactivity.onFabClickEvent()}"
+            app:borderWidth="0dp"
+            android:src="@drawable/share_24"
+            app:elevation="0dp"
+            app:layout_anchor="@id/carviewrelativelayout"
+            app:layout_anchorGravity="bottom|right|end"
+            app:fabSize="mini" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
